@@ -1,0 +1,15 @@
+document.write(" <br><h2> Assignment Operators</h2>");
+var a = 10;
+let c = 20;
+document.write("<br>");
+document.write("Assignment...  " + (a = c));
+document.write("<br>");
+document.write("Addition-Assignment....  " + (a += c));
+document.write("<br>");
+document.write("subtraction.-Assignment..  " + (c -= a));
+document.write("<br>");
+document.write("Multiplication-Assignment...." + (a *= c));
+document.write("<br>");
+document.write("Modulus-Assignment.." + (a %= c));
+document.write("<br>");
+document.write("Exponentiation-Assignment...." + (a **= c));
