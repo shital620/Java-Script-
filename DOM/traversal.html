@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #outer {
+        background-color: aqua;
+      }
+      #inner {
+        background-color: blueviolet;
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+      }
+      .abc {
+        background-color: cornsilk;
+        border: 2px black;
+        height: 100px;
+        margin: 10px;
+      }
+    </style>
+    <h1>Dom navigation</h1>
+    <div id="outer">
+      <h2>Outer</h2>
+      <div id="inner">
+        <div class="abc" id="child-a">A</div>
+        <div class="abc" id="child-b">B</div>
+        <div class="abc" id="child-c">C</div>
+        <div class="abc" id="child-d">D</div>
+        <div class="abc" id="child-e">E</div>
+      </div>
+    </div>
+    <script src="./traversal.js"></script>
+  </body>
+</html>

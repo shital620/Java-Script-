@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="submitFunction()">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        onfocus="focusfunction(this)"
+        onblur="blurFunction(this)"
+        oninput="oninputFunction(this)"
+        required
+      /><br /><br />
+
+      <label for="class">Class</label>
+      <input
+        type="text"
+        id="class"
+        onfocus="focusfunction(this)"
+        onblur="blurFunction(this)"
+        oninput="oninputFunction(this)"
+        oninvalid="alert('pleasse fill the class')"
+        required
+      /><br /><br />
+
+      <label for="country">Country</label>
+      <select
+        name="country"
+        id="country"
+        onfocus="focusfunction(this)"
+        onblur="blurFunction(this)"
+        onchange="onchangeFunction(this)"
+      >
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Nepal">Nepal</option>
+      </select>
+      <input type="submit" />
+    </form>
+
+    <div id="test" style="background-color: blueviolet"></div>
+    <script src="./eventFrom.js"></script>
+  </body>
+</html>
